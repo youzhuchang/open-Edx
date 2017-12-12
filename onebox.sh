@@ -26,6 +26,8 @@ TEMPLATE_TYPE=fullstack # fullstack or devstack
 BRANCH_VERSIONS=edge    # edge or release or stable or edx
 DEFAULT_PASSWORD=
 MSFT_AUTH=
+NGINX_ENABLE_SSL=false
+SECRET_KEY=
 
 ##########################
 # Settings
@@ -46,7 +48,6 @@ readonly CMS_URL=$BASE_URL
 readonly PREVIEW_URL=$BASE_URL
 readonly PLATFORM_NAME="$MSFT Learning on $HOSTNAME"
 readonly EDXAPP_IMPORT_KITCHENSINK_COURSE=true
-readonly NGINX_ENABLE_SSL=false
 readonly EDXAPP_SU_EMAIL="${EDXAPP_SU_USERNAME}@${MSFT}.com"
 readonly PLATFORM_EMAIL="$EDXAPP_SU_EMAIL"
 readonly EDXAPP_COMPREHENSIVE_THEME_DIRS='[ "/edx/app/edxapp/themes" ]'
@@ -101,6 +102,13 @@ parse_args()
           --msft-oauth|--msft-auth)
             # convert to lowercase
             MSFT_AUTH="${arg_value,,}"
+            ;;
+          -s|--enable-ssl)
+            # convert to lowercase
+            NGINX_ENABLE_SSL="${arg_value,,}"
+            ;;
+          -k|--secret-key)
+            SECRET_KEY="${arg_value}"
             ;;
           *)
             # Unknown option encountered
