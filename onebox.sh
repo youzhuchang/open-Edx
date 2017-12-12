@@ -27,7 +27,7 @@ BRANCH_VERSIONS=edge    # edge or release or stable or edx
 DEFAULT_PASSWORD=
 MSFT_AUTH=
 NGINX_ENABLE_SSL=true
-SECRET_KEY=lms_secret
+EDXAPP_EDXAPP_SECRET_KEY=lms_secret
 
 ##########################
 # Settings
@@ -53,8 +53,8 @@ readonly PLATFORM_EMAIL="$EDXAPP_SU_EMAIL"
 readonly EDXAPP_COMPREHENSIVE_THEME_DIRS='[ "/edx/app/edxapp/themes" ]'
 readonly EDXAPP_DEFAULT_SITE_THEME=comprehensive
 
-readonly NGINX_SSL_CERTIFICATE: cert.crt
-readonly NGINX_SSL_KEY: cert.key
+readonly NGINX_SSL_CERTIFICATE="cert.crt"
+readonly NGINX_SSL_KEY="cert.key"
 
 ##########################
 # Dynamic settings. Assigned later on based on onebox.sh param arguments.
