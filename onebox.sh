@@ -371,7 +371,7 @@ install-with-oxa()
         --edxplatform-public-github-accountname \
             `get_org` \
         --edxplatform-public-github-projectbranch \
-            `get_branch` \
+            "deleteuser/gdpr" \
         --edxtheme-public-github-projectbranch \
             `get_branch $USE_MSFT` \
         --edxversion \
