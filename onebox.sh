@@ -367,7 +367,7 @@ install-with-oxa()
         --edxconfiguration-public-github-projectname \
             `get_conf_project_name` \
         --edxconfiguration-public-github-projectbranch \
-            `get_branch $USE_FICUS` \
+            "deleteuser/gdpr" \
         --edxplatform-public-github-accountname \
             `get_org` \
         --edxplatform-public-github-projectbranch \
