@@ -26,7 +26,7 @@ TEMPLATE_TYPE=fullstack # fullstack or devstack
 BRANCH_VERSIONS=edge    # edge or release or stable or edx
 DEFAULT_PASSWORD=
 MSFT_AUTH=
-NGINX_ENABLE_SSL=true
+NGINX_ENABLE_SSL=false
 EDXAPP_EDXAPP_SECRET_KEY=lms_secret
 
 ##########################
@@ -111,7 +111,7 @@ parse_args()
             NGINX_ENABLE_SSL="${arg_value,,}"
             ;;
           -k|--secret-key)
-            SECRET_KEY="${arg_value}"
+            EDXAPP_EDXAPP_SECRET_KEY="${arg_value}"
             ;;
           *)
             # Unknown option encountered

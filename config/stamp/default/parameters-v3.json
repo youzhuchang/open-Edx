@@ -258,6 +258,9 @@
         },
         "edxPlatformEmail": {
             "value": "{EDXPLATFORMEMAIL}"
+        },
+        "edxappSecretKey": {
+            "value": "{EDXAPPSECRETKEY}"
         }
     }
 }
