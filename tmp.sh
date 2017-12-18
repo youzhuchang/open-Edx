@@ -4,4 +4,4 @@
 
 # cloud:
 sudo bash onebox.sh --msft-oauth prod
-# local: -d hokiePokie , -r ds
+# local: -d hokiePokie -r ds
