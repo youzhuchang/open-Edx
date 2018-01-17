@@ -449,7 +449,7 @@ cleanup_old_tracking_logs()
         echo " "
 
     done < tracklogsblobs.json
-    rm tracklogsblobs.json
+    #rm tracklogsblobs.json
 }
 
 
