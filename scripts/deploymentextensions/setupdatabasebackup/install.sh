@@ -73,100 +73,100 @@ parse_args()
         log "Option '${1}' set with value '"${arg_value}"'"
 
         case "$1" in
-            --oxatools-public-github-accountname)
-                oxa_tools_public_github_account="${arg_value}"
-                ;;
-            --oxatools-public-github-projectname)
-                oxa_tools_public_github_projectname="${arg_value}"
-                ;;
-            --oxatools-public-github-projectbranch)
-                oxa_tools_public_github_projectbranch="${arg_value}"
-                ;;
-            --oxatools-public-github-branchtag)
-                oxa_tools_public_github_branchtag="${arg_value}"
-                ;;
-            --oxatools-repository-path)
-                oxa_tools_repository_path="${arg_value}"
-                ;;
-            --azure-resource-group)
-                cluster_name="${arg_value}"
-                backup_storageaccount_name="${cluster_name}securesa"
-                ;;
-            --cluster-admin-email)
-                cluster_admin_email="${arg_value}"
-                ;;
-            --mongo-replicaset-name)
-                mongo_replicaset_name="${arg_value}"
-                ;;
-            --mongo-server-list)
-                encoded_mongo_server_list="${arg_value}"
-                ;;
-            --mysql-server)
-                encoded_mysql_server="${arg_value}"
-                ;;
-            --mysql-server-port)
-                mysql_server_port="${arg_value}"
-                ;;
-            --backup-storageaccount-name)
-                backup_storageaccount_name="${arg_value}"
-                ;;
-            --backup-storageaccount-key)
-                backup_storageaccount_key="${arg_value}"
-                ;;
-            --backup-storageaccount-endpointsuffix)
-                backup_storageaccount_endpoint_suffix="${arg_value}"
-                ;;
-            --backup-local-path)
-                backup_local_path="${arg_value}"
-                ;;
-            # mysql backup settings
-            --mysql-backup-frequency)
-                mysql_backup_frequency=`echo ${arg_value} | base64 --decode`
-                ;;
-            --mysql-backup-retentiondays)
-                mysql_backup_retentiondays="${arg_value}"
-                ;;
-            --mysql-admin-username)
-                mysql_admin_username="${arg_value}"
-                ;;
-            --mysql-admin-password)
-                mysql_admin_password="${arg_value}"
-                ;;
-            --mysql-backup-username)
-                mysql_backup_username="${arg_value}"
-                ;;
-            --mysql-backup-password)
-                mysql_backup_password="${arg_value}"
-                ;;
-            # mongo backup settings
-            --mongo-backup-frequency)
-                mongo_backup_frequency=`echo ${arg_value} | base64 --decode`
-                ;;
-            --mongo-backup-retentiondays)
-                mongo_backup_retentiondays="${arg_value}"
-                ;;
-            --mongo-admin-username)
-                mongo_admin_username="${arg_value}"
-                ;;
-            --mongo-admin-password)
-                mongo_admin_password="${arg_value}"
-                ;;
-            --mongo-backup-username)
-                mongo_backup_username="${arg_value}"
-                ;;
-            --mongo-backup-password)
-                mongo_backup_password="${arg_value}"
-                ;;            
-            --azure-cli-version)
-                azure_cli_version=$2
-                if ! is_valid_arg "1 2" $azure_cli_version; then
-                    echo "Invalid azure cli specified. Only versions 1 & 2 are supported\n"
-                    exit 2
-                fi
-                ;;
-            --debug)
-                debug_mode=1
-                ;;
+             --oxatools-public-github-accountname)
+                 oxa_tools_public_github_account="${arg_value}"
+                 ;;
+             --oxatools-public-github-projectname)
+                 oxa_tools_public_github_projectname="${arg_value}"
+                 ;;
+             --oxatools-public-github-projectbranch)
+                 oxa_tools_public_github_projectbranch="${arg_value}"
+                 ;;
+             --oxatools-public-github-branchtag)
+                 oxa_tools_public_github_branchtag="${arg_value}"
+                 ;;
+             --oxatools-repository-path)
+                 oxa_tools_repository_path="${arg_value}"
+                 ;;
+             --azure-resource-group)
+                 cluster_name="${arg_value}"
+                 backup_storageaccount_name="${cluster_name}securesa"
+                 ;;
+             --cluster-admin-email)
+                 cluster_admin_email="${arg_value}"
+                 ;;
+             --mongo-replicaset-name)
+                 mongo_replicaset_name="${arg_value}"
+                 ;;
+             --mongo-server-list)
+                 encoded_mongo_server_list="${arg_value}"
+                 ;;
+             --mysql-server)
+                 encoded_mysql_server="${arg_value}"
+                 ;;
+             --mysql-server-port)
+                 mysql_server_port="${arg_value}"
+                 ;;
+             --backup-storageaccount-name)
+                 backup_storageaccount_name="${arg_value}"
+                 ;;
+             --backup-storageaccount-key)
+                 backup_storageaccount_key="${arg_value}"
+                 ;;
+             --backup-storageaccount-endpointsuffix)
+                 backup_storageaccount_endpoint_suffix="${arg_value}"
+                 ;;
+             --backup-local-path)
+                 backup_local_path="${arg_value}"
+                 ;;
+             # mysql backup settings
+             --mysql-backup-frequency)
+                 mysql_backup_frequency=`echo ${arg_value} | base64 --decode`
+                 ;;
+             --mysql-backup-retentiondays)
+                 mysql_backup_retentiondays="${arg_value}"
+                 ;;
+             --mysql-admin-username)
+                 mysql_admin_username="${arg_value}"
+                 ;;
+             --mysql-admin-password)
+                 mysql_admin_password="${arg_value}"
+                 ;;
+             --mysql-backup-username)
+                 mysql_backup_username="${arg_value}"
+                 ;;
+             --mysql-backup-password)
+                 mysql_backup_password="${arg_value}"
+                 ;;
+             # mongo backup settings
+             --mongo-backup-frequency)
+                 mongo_backup_frequency=`echo ${arg_value} | base64 --decode`
+                 ;;
+             --mongo-backup-retentiondays)
+                 mongo_backup_retentiondays="${arg_value}"
+                 ;;
+             --mongo-admin-username)
+                 mongo_admin_username="${arg_value}"
+                 ;;
+             --mongo-admin-password)
+                 mongo_admin_password="${arg_value}"
+                 ;;
+             --mongo-backup-username)
+                 mongo_backup_username="${arg_value}"
+                 ;;
+             --mongo-backup-password)
+                 mongo_backup_password="${arg_value}"
+                 ;;            
+             --azure-cli-version)
+                 azure_cli_version=$2
+                 if ! is_valid_arg "1 2" $azure_cli_version; then
+                     echo "Invalid azure cli specified. Only versions 1 & 2 are supported\n"
+                     exit 2
+                 fi
+                 ;;
+             --debug)
+                 debug_mode=1
+                 ;;
         esac
 
         shift # past argument or value
