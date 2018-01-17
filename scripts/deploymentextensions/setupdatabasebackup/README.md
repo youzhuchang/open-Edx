@@ -4,7 +4,15 @@
 This deployment extension sets up database backup for the cluster.
 
 **Parameters**
+1. _oxatools-public-github-accountname_:
+1. _oxatools-public-github-projectname_:
+1. _oxatools-public-github-projectbranch_:
+1. _oxatools-public-github-branchtag_:
+1. _oxatools-repository-path_:
+1. _azure-resource-group_:
 1. _cluster-admin-email_: the email address of the cluster administrator that will be used for all deployment notifications
+1. _mongo-replicaset-name_:
+1. _mongo-server-list_:
 1. _mysql-server_: IP address of the master mysql server in the cluster (optional) **1**
 1. _mysql-server-port_: port on the mysql server used for communication (optional)
 1. _backup-storageaccount-name_: the azure storage account used for backups. **2**
