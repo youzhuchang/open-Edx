@@ -27,8 +27,8 @@
             "value": "lexoxaadmin"
         },
         "adminPublicKey": {
-            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCj0GHnhX8L8cPtCFhNPTClvDMzeMsB+ys5uMaqFgTa2mrWSUBsbsVwK91H6mwtrKRJf42Ry5DVYKLPf8XSz22v5iyZ1DrbkGJcmHRWEBFA47habQFg+eXBUSENUf1cMOh4RwkN1olCLpsdeKrF0Rj6k3ZFODUJIf+v5HYKFkj+8iVdQh0wgnPVxneqIKcbqNLO8ymmAiTT+fYaubPWzJmq8nUKoNZRiPXSSAwHHtNouR4vvPtOU7je2TxzoYIcM/Ja6YycBx44W+A7ygY5/hmij4Byhm20MLZLoBLX2AMp8horzqWhdF/wvFMhv8FTTzlWpwhuEpbd2M4B6Tylajm8lwA9u/9MO6lEbqnX/XH/KS9hPZdKvqXgbPTzM265Aea0LPXHDdF0f9AID6Xl3grHrtkKFGMzbgqFtF9nd51kwDTZr2b1zIVWb6XxDXXVhX4XqWniCT8xEzuGyMp4/mhaghRDhT45Alu6Frv6d5+IjeabBSXOwwe+8NpTDc0+hxM/MYiE4K6EHpPqwxOoRJcZFrjdSxQGGrCD+bLJbGfI8tn96Wq4zBBUMp+iX1iXXNScgqUAaSoNKEH8ag177oOvtH3AsB/b7Nm/eUIr/WYfYESlft1M1h25Lvu6QgFyqJlwdXSPCiIYbR6nK6WI2Zz6cActCLoJaN7IPw6RLeY+tw== admin@contoso.com"
-        },
+        	"value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYHJblPBpfFMtspxqJ0VNx8loCGZGknqBnKdwxauG8W0Zys8i4R2CufzoXd3aYB0aiYKXtjcrSrIymX3ZIzEwFvmBK5HmC1Q/kuBnGn51ul+bP5PXF7hZLR4sVoPlhO7UaGsdHY1GBuDDfmZUuJhO9fNAvLOeRmXYZUQMABi60BN+7SMeGIb0G8OjeyI9+m7nck+gwwFK12zKO7/raJx5rAxDTKTqc0ab2SCyQ4ZYPcAuYg3kdXNBewbVXtZVSgRIuA7ckSeC/44uguL7YVsbUkwv4fqmEuH4Hvuj2QyHpU2p5QlG162F0s9TPprVCPCIT69A93eovDyDy+gnybQneD5Swjnx4zTxY6mBztTGEImfHhFhnwYYRaq2uEpTP5r4w/CgMPXwizIaWsBvLDm+NTF3WGWrbfqwaZBkWxKu6ZrGEUAqajKPAE+UBIsddpt1TQA0XfGwew2fknTe3H5X5MZNuwO5i9K9D2Amwt0di9F37gY30nsbmrgI37/T8KyAx5gpFye8PyhG0B1u3BdxszRke86Yf7wpWjCGLqCVSOX3le6pjIoHtq6Pug77+A/XwkbLg1uWXYjsFCiZuQOKZ8hyNvqE90N4sWqEgGiGD4ixjAtDrTyHZUQ/ZFcVt1/qScNct1UW4Vc2ee/HtXtnCABWCKwptBN40CAIXCS0rpQ== v-duwang@MININT-02VUBMG"
+		},
         "mongoServerAdminUserName": {
             "value": "oxamongoadmin"
         },
@@ -254,7 +254,7 @@
             "value": ""
         },
         "baseDomain": {
-            "value": "{CLUSTERNAME}-tm.trafficmanager.net"
+            "value": "{CLUSTERNAME}-tm.trafficmanager.cn"
         },
         "domainSeparator": {
             "value": "-"
@@ -275,7 +275,7 @@
             "value": "{AZURECLIVERSION}"
         },
         "enableMobileRestApi": {
-            "value": {ENABLEMOBILERESTAPI}
+            "value": false
         },
         "edxPlatformName": {
             "value": "{EDXPLATFORMNAME}"            

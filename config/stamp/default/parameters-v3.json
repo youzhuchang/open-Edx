@@ -230,7 +230,7 @@
             "value": ""
         },
         "baseDomain": {
-            "value": "{CLUSTERNAME}-tm.trafficmanager.net"
+            "value": "{CLUSTERNAME}-tm.trafficmanager.cn"
         },
         "domainSeparator": {
             "value": "-"
