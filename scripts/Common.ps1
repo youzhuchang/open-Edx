@@ -2231,7 +2231,7 @@ function Get-DeploymentStatus
 
     # Rest api url to receive messages from Service bus queue
     # https://docs.microsoft.com/en-us/rest/api/servicebus/receive-and-delete-message-destructive-read
-    $servicebusPeekLockRequestUrl = "https://$($ServiceBusNamespace).servicebus.windows.net/$($ServiceBusQueueName)/messages/head";
+    $servicebusPeekLockRequestUrl = "https://$($ServiceBusNamespace).servicebus.chinacloudapi.cn/$($ServiceBusQueueName)/messages/head";
     
     # Generating SAS token to authenticate Service bus Queue to receive messages
     $authorizedSasToken = Get-SasToken -Saskey $Saskey -ServicebusPeekLockRequestUrl $servicebusPeekLockRequestUrl -SharedAccessPolicyName $SharedAccessPolicyName;

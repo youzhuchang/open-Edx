@@ -359,11 +359,11 @@
                     "storageProfile": {
                         "osDisk": {
                             "vhdContainers": [
-                                "[concat('https://', variables('uniqueStringArray')[0], '.blob.core.windows.net/', parameters('storageSettings').storageContainerName)]",
-                                "[concat('https://', variables('uniqueStringArray')[1], '.blob.core.windows.net/', parameters('storageSettings').storageContainerName)]",
-                                "[concat('https://', variables('uniqueStringArray')[2], '.blob.core.windows.net/', parameters('storageSettings').storageContainerName)]",
-                                "[concat('https://', variables('uniqueStringArray')[3], '.blob.core.windows.net/', parameters('storageSettings').storageContainerName)]",
-                                "[concat('https://', variables('uniqueStringArray')[4], '.blob.core.windows.net/', parameters('storageSettings').storageContainerName)]"
+                                "[concat('https://', variables('uniqueStringArray')[0], '.blob.core.chinacloudapi.cn/', parameters('storageSettings').storageContainerName)]",
+                                "[concat('https://', variables('uniqueStringArray')[1], '.blob.core.chinacloudapi.cn/', parameters('storageSettings').storageContainerName)]",
+                                "[concat('https://', variables('uniqueStringArray')[2], '.blob.core.chinacloudapi.cn/', parameters('storageSettings').storageContainerName)]",
+                                "[concat('https://', variables('uniqueStringArray')[3], '.blob.core.chinacloudapi.cn/', parameters('storageSettings').storageContainerName)]",
+                                "[concat('https://', variables('uniqueStringArray')[4], '.blob.core.chinacloudapi.cn/', parameters('storageSettings').storageContainerName)]"
                             ],
                             "name": "[concat(parameters('networkSettings').clusterVirtualMachineScaleSetName, parameters('networkSettings').osDiskSuffix)]",
                             "caching": "ReadOnly",
@@ -445,7 +445,7 @@
                                     "protectedSettings": {
                                         "storageAccountName": "[parameters('customSettings').linuxDiagnosticsSettings.diagnosticsStorageAccountName]",
                                         "storageAccountKey": "[listkeys(parameters('customSettings').linuxDiagnosticsSettings.diagnosticsStorageAccountId , parameters('apiSettings').storageApiVersion).keys[0]]",
-                                        "storageAccountEndPoint": "https://core.windows.net"
+                                        "storageAccountEndPoint": "https://core.chinacloudapi.cn"
                                     }
                                 }
                             }

@@ -7,7 +7,7 @@
 # Immmediately exit on error
 set -axe
 
-readonly MSFT="microsoft"
+readonly MSFT="iovex"
 
 ##########################
 # Script Defaults that can be overriden via

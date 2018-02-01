@@ -338,7 +338,7 @@
         "diagnosticStorageAccountName": "[concat(toLower(parameters('clusterName')), 'diagnostics')]",
         "storageAccountName": "[concat(toLower(parameters('clusterName')), 'vhdsa')]",
         "storageAccountType": "Standard_LRS",
-        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.windows.net/vhds/')]",
+        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.chinacloudapi.cn/vhds/')]",
 
         "loadBalancerName": "[concat(parameters('clusterName'), '-lb-', parameters('deploymentSlot'))]",
         "virtualNetworkName": "[concat(parameters('clusterName'), '-vnet')]",

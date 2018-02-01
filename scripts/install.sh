@@ -28,13 +28,13 @@ EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTBRANCH=""
 
 # EdX Platform
 # There are cases where we want to override the edx-platform repository itself
-EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTNAME="edx-platform"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master"
 
 # EdX Theme
 # There are cases where we want to override the edx-platform repository itself
-EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 EDX_THEME_PUBLIC_GITHUB_PROJECTNAME="edx-theme"
 EDX_THEME_PUBLIC_GITHUB_PROJECTBRANCH="pilot"
 

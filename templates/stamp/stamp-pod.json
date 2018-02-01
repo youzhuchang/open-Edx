@@ -172,7 +172,7 @@
         },
         "customInstallerGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the GitHub account where the custom installer lives"
             }
@@ -199,7 +199,7 @@
         },
         "githubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the GitHub account where the Azure Arm Template lives"
             }
@@ -338,7 +338,7 @@
         "diagnosticStorageAccountName": "[concat(toLower(parameters('clusterName')), 'diagnostics')]",
         "storageAccountName": "[concat(toLower(parameters('clusterName')), 'vhdsa')]",
         "storageAccountType": "Standard_LRS",
-        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.windows.net/vhds/')]",
+        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.chinacloudapi.cn/vhds/')]",
 
         "loadBalancerName": "[concat(parameters('clusterName'), '-lb-', parameters('deploymentSlot'))]",
         "virtualNetworkName": "[concat(parameters('clusterName'), '-vnet')]",
