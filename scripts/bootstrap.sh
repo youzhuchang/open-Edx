@@ -13,7 +13,7 @@ TARGET_FILE=""
 
 # Oxa Tools
 # Settings for the OXA-Tools public repository 
-OXA_TOOLS_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+OXA_TOOLS_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 OXA_TOOLS_PUBLIC_GITHUB_PROJECTNAME="oxa-tools"
 OXA_TOOLS_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
@@ -22,7 +22,7 @@ OXA_TOOLS_VERSION=""
 
 # EdX Configuration
 # There are cases where we want to override the edx-configuration repository itself
-EDX_CONFIGURATION_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+EDX_CONFIGURATION_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTNAME="edx-configuration"
 EDX_CONFIGURATION_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
@@ -31,13 +31,13 @@ CONFIGURATION_VERSION=""
 
 # EdX Platform
 # There are cases where we want to override the edx-platform repository itself
-EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+EDX_PLATFORM_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTNAME="edx-platform"
 EDX_PLATFORM_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 
 # EdX Theme
 # There are cases where we want to override the edx-platform repository itself
-EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="Microsoft"
+EDX_THEME_PUBLIC_GITHUB_ACCOUNTNAME="iovex"
 EDX_THEME_PUBLIC_GITHUB_PROJECTNAME="edx-theme"
 EDX_THEME_PUBLIC_GITHUB_PROJECTBRANCH="oxa/master.fic"
 EDX_THEME_NAME="default"

@@ -61,7 +61,7 @@
     "apiVersion": "2015-06-15",
     "openedxVersion": "named-release/dogwood.rc",
     "personalAccessToken": "",
-    "scriptDownloadUri": "https://raw.githubusercontent.com/Microsoft/oxa-tools/btelnes/",
+    "scriptDownloadUri": "https://raw.githubusercontent.com/iovex/oxa-tools/btelnes/",
     "installScript": "bootstrap.sh",
     "installCommand": "[concat('bash -c ''nohup ./', variables('installScript'), '  -r fullstack -e dev ', ' </dev/null &>/var/log/azure/openedx-install.log &''')]",
     "vmName": "jumpbox2",
@@ -239,7 +239,7 @@
           "osDisk": {
             "name": "[concat(variables('vmName'),'-osdisk')]",
             "vhd": {
-              "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.windows.net/', variables('vhdBlobContainer'), '/', variables('vmName'), '-osdisk.vhd')]"
+              "uri": "[concat('http://', variables('storageAccountName'), '.blob.core.chinacloudapi.cn/', variables('vhdBlobContainer'), '/', variables('vmName'), '-osdisk.vhd')]"
             },
             "caching": "ReadWrite",
             "createOption": "FromImage"

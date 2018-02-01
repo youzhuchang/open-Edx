@@ -116,7 +116,7 @@ NOTIFICATION_MESSAGE="Installation of '${AGENT_TYPE^^}' Agent on '${HOSTNAME}'"
 
 case "$AGENT_TYPE" in
   oms)
-    wget https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w $OMS_WORKSPACEID -s $PRIMARY_KEY
+    wget https://raw.githubusercontent.com/microsoft/OMS-Agent-for-Linux/master/installer/scripts/onboard_agent.sh && sh onboard_agent.sh -w $OMS_WORKSPACEID -s $PRIMARY_KEY
     ;;
   datadog)
     DD_API_KEY=$PRIMARY_KEY bash -c "$(curl -L https://raw.githubusercontent.com/DataDog/dd-agent/master/packaging/datadog-agent/source/install_agent.sh)"

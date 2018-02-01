@@ -179,7 +179,7 @@
         },
         "oxaToolsGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the account that owns the oxa-tools GitHub repository"
             }
@@ -200,7 +200,7 @@
         },
         "edxConfigurationGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the account that owns the edx configuration repository"
             }
@@ -221,7 +221,7 @@
         },
         "edxPlatformGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the account that owns the edx platform repository"
             }
@@ -242,7 +242,7 @@
         },
         "edxThemeGithubAccountName": {
             "type": "string",
-            "defaultValue": "microsoft",
+            "defaultValue": "iovex",
             "metadata": {
                 "description": "Name of the account that owns the edx theme repository"
             }
@@ -664,7 +664,7 @@
         "wamsStorageAccountName": "[concat(toLower(parameters('clusterName')), 'wamssa')]",
         "mediaServicesAccountName": "[concat(toLower(parameters('clusterName')), 'wamsmedia')]",
         "storageAccountType": "Standard_LRS",
-        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.windows.net/vhds/')]",
+        "storageContainer": "[concat('https://', variables('storageAccountName'),'.blob.core.chinacloudapi.cn/vhds/')]",
         "loadBalancerName": "[concat(parameters('clusterName'), '-lb-', parameters('deploymentSlot'))]",
         "virtualNetworkName": "[concat(parameters('clusterName'), '-vnet')]",
         "subnetName": "[concat(parameters('clusterName'), '-subnet')]",

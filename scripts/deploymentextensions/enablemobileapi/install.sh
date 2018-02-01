@@ -9,7 +9,7 @@
 
 # Oxa Tools
 # Settings for the OXA-Tools public repository 
-oxa_tools_public_github_account="Microsoft"
+oxa_tools_public_github_account="iovex"
 oxa_tools_public_github_projectname="oxa-tools"
 oxa_tools_public_github_projectbranch="oxa/master.fic"
 oxa_tools_public_github_branchtag=""
@@ -159,7 +159,7 @@ authenticate-azureuser()
     # this call requires azure cli2
 
     # login
-    results=`az login -u $aad_webclient_id --service-principal --tenant $aad_tenant_id -p $aad_webclient_appkey --output json`
+    results=`az login -e AzureChinaCloud -u $aad_webclient_id --service-principal --tenant $aad_tenant_id -p $aad_webclient_appkey --output json`
     exit_on_error "Could not login to azure with the provided service principal credential from '${HOSTNAME}' !" "${error_mobilerestapi_update_failed}" "${notification_email_subject}" "${cluster_admin_email}"
 
     # select the appropriate subscription to set the execution context

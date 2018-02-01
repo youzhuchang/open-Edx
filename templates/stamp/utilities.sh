@@ -1030,10 +1030,10 @@ get_azure_storage_endpoint_suffix()
 {
     local suffix=`echo ${1}| base64 --decode`
     
-    # default storage account suffix to core.windows.net if not specified
+    # default storage account suffix to core.chinacloudapi.cn if not specified
     if [[ -z "${suffix// }" ]]; then
 
-        suffix="core.windows.net"
+        suffix="core.chinacloudapi.cn"
     fi
 
     echo $suffix
@@ -1062,7 +1062,7 @@ setup_backup()
     local azureCliVersion="${16:-1}"                                                # Azure Cli Version to use for backup operations
 	
     # Optional.
-    local storageAccountEndpointSuffix=`get_azure_storage_endpoint_suffix ${17}`    # Blob storage suffix (defaults to core.windows.net for global azure)
+    local storageAccountEndpointSuffix=`get_azure_storage_endpoint_suffix ${17}`    # Blob storage suffix (defaults to core.chinacloudapi.cn for global azure)
     tempDatabaseUser="${18}"; tempDatabasePassword="${19}";                         # Temporary credentials for accessing the backup (optional)
     
     # generate a storage connection string
