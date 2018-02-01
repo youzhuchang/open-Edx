@@ -88,7 +88,7 @@ Import-Module "$($currentPath)/Common.ps1" -Force
 # Login
 $clientSecret = ConvertTo-SecureString -String $AadWebClientAppKey -AsPlainText -Force
 $aadCredential = New-Object System.Management.Automation.PSCredential($AadWebClientId, $clientSecret)
-Login-AzureRmAccount -ServicePrincipal -TenantId $AadTenantId -SubscriptionName $AzureSubscriptionName -Credential $aadCredential -ErrorAction Stop
+Login-AzureRmAccount  -Environment AzureChinaCloud -ServicePrincipal -TenantId $AadTenantId -SubscriptionName $AzureSubscriptionName -Credential $aadCredential -ErrorAction Stop
 Set-AzureSubscription -SubscriptionName $AzureSubscriptionName | Out-Null
 
 # if upgrade is set, we skip deleting the existing extensions
@@ -118,7 +118,7 @@ if ($Upgrade -eq $false)
                                                     # Login
                                                     $clientSecret = ConvertTo-SecureString -String $AadWebClientAppKey -AsPlainText -Force
                                                     $aadCredential = New-Object System.Management.Automation.PSCredential($AadWebClientId, $clientSecret)
-                                                    Login-AzureRmAccount -ServicePrincipal -TenantId $AadTenantId -SubscriptionName $AzureSubscriptionName -Credential $aadCredential -ErrorAction Stop
+                                                    Login-AzureRmAccount  -Environment AzureChinaCloud -ServicePrincipal -TenantId $AadTenantId -SubscriptionName $AzureSubscriptionName -Credential $aadCredential -ErrorAction Stop
                                                     Set-AzureSubscription -SubscriptionName $AzureSubscriptionName | Out-Null
 
                                                     Remove-AzureRmVMCustomScriptExtension -ResourceGroupName $ResourceGroupName -VMName $vmName -Name $extensionName -Force

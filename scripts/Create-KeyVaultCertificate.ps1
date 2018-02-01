@@ -57,7 +57,7 @@ $invocation = (Get-Variable MyInvocation).Value
 $currentPath = Split-Path $invocation.MyCommand.Path 
 Import-Module "$($currentPath)/Common.ps1" -Force
 
-Login-AzureRmAccount
+Login-AzureRmAccount -Environment AzureChinaCloud
 Import-Module AzureRM.Resources
 
 $SubscriptionId = Get-AzureRmSubscription -SubscriptionName $AzureSubscriptionName

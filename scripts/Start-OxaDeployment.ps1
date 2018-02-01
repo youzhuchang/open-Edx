@@ -153,7 +153,7 @@ $CertSubject = Set-ScriptDefault -ScriptParamName "CertSubject" `
 
 # Login
 $CertificateThumbprint = Get-LocalCertificate -CertSubject $CertSubject
-Login-AzureRmAccount -ServicePrincipal -CertificateThumbprint $CertificateThumbprint -ApplicationId $AadWebClientId -TenantId $AadTenantId
+Login-AzureRmAccount  -Environment AzureChinaCloud -ServicePrincipal -CertificateThumbprint $CertificateThumbprint -ApplicationId $AadWebClientId -TenantId $AadTenantId
 Set-AzureSubscription -SubscriptionName $AzureSubscriptionName | Out-Null
 
 Log-Message "Getting Deployment Parameters from KeyVault..."
