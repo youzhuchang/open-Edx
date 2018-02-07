@@ -23,7 +23,7 @@ PREVIEW_URL=preview.$BASE_URL
 
 # deployment configuration
 # URL-building will be replaced by the use of LMS_URL | CMS_URL (above)
-# uri format: [lms|cms]-%%CLUSTERNAME%%-%%DEPLOYMENT_SLOT%%.%%REGION%%.cloudapp.azure.com
+# uri format: [lms|cms]-%%CLUSTERNAME%%-%%DEPLOYMENT_SLOT%%.%%REGION%%.cloudapp.chinacloudapi.cn
 TEMPLATE_TYPE=stamp # stamp|fullstack|devstack
 CLUSTERNAME={CLUSTERNAME}
 ADMIN_USER=oxaadmin

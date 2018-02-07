@@ -759,13 +759,13 @@
                     "monitorConfigPort": 443,
                     "monitorConfigPath": "/",
                     "endpoint1": {
-                        "target": "[concat('lms-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('lms-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('lmsTrafficManagerStateMetadata')[0]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('lmsTrafficManagerStateMetadata')[2]]"
                     },
                     "endpoint2": {
-                        "target": "[concat('lms-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('lms-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('lmsTrafficManagerStateMetadata')[1]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('lmsTrafficManagerStateMetadata')[3]]"
@@ -777,13 +777,13 @@
                     "monitorConfigPort": 443,
                     "monitorConfigPath": "/",
                     "endpoint1": {
-                        "target": "[concat('cms-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('cms-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('cmsTrafficManagerStateMetadata')[0]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('cmsTrafficManagerStateMetadata')[2]]"
                     },
                     "endpoint2": {
-                        "target": "[concat('cms-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('cms-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('cmsTrafficManagerStateMetadata')[1]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('cmsTrafficManagerStateMetadata')[3]]"
@@ -795,13 +795,13 @@
                     "monitorConfigPort": 443,
                     "monitorConfigPath": "/",
                     "endpoint1": {
-                        "target": "[concat('preview-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('preview-', parameters('clusterName'), '-slot1.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('previewTrafficManagerStateMetadata')[0]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('previewTrafficManagerStateMetadata')[2]]"
                     },
                     "endpoint2": {
-                        "target": "[concat('preview-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.azure.com')]",
+                        "target": "[concat('preview-', parameters('clusterName'), '-slot2.',resourceGroup().location, '.cloudapp.chinacloudapi.cn')]",
                         "status": "[parameters('previewTrafficManagerStateMetadata')[1]]",
                         "location": "[resourceGroup().location]",
                         "priority": "[parameters('previewTrafficManagerStateMetadata')[3]]"
