@@ -157,7 +157,7 @@ Param(
 
         [Parameter(Mandatory=$false)][string]$ServiceAccountPassword="5QFrMCIKJaVazBWisd0fMJR",
 
-        [Parameter(Mandatory=$false)][string]$PlatformName="Contoso Learning",
+        [Parameter(Mandatory=$false)][string]$PlatformName="Nethappy Learning",
         [Parameter(Mandatory=$false)][string]$PlatformEmailAddress="",
 
         [Parameter(Mandatory=$false)][string]$EdxAppSuperUserName="edxappadmin",
