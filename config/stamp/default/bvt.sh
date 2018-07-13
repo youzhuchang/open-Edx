@@ -16,7 +16,7 @@ ENVIRONMENT=bvt
 ##########################
 
 # the site certificate files (.crt & .key) have to be named after the BASE_URL value
-BASE_URL=nethappy.cf
+BASE_URL=edenedu.net
 LMS_URL=lms.$BASE_URL
 CMS_URL=cms.$BASE_URL
 PREVIEW_URL=preview.$BASE_URL
@@ -46,11 +46,11 @@ EDXAPP_EMAIL_TECH_SUPPORT="${PLATFORM_EMAIL}"
 EDXAPP_EMAIL_UNIVERSITY="${PLATFORM_EMAIL}"
 
 # config/versions.yml
-CONFIGURATION_REPO=https://github.com/iovex/edx-configuration.git
+CONFIGURATION_REPO=https://github.com/youzhuchang/edx-configuration.git
 CONFIGURATION_VERSION=oxa/master.fic
-PLATFORM_REPO=https://github.com/iovex/edx-platform.git
+PLATFORM_REPO=https://github.com/youzhuchang/edx-platform.git
 PLATFORM_VERSION=oxa/master.fic
-THEME_REPO=https://github.com/iovex/edx-theme.git
+THEME_REPO=https://github.com/youzhuchang/edx-theme.git
 THEME_VERSION=oxa/master.fic
 EDX_VERSION=open-release/ficus.master
 FORUM_VERSION=open-release/ficus.master

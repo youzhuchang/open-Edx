@@ -75,7 +75,7 @@
             "value": 1
         },
         "oxaToolsGithubAccountName": {
-            "value": "iovex"
+            "value": "youzhuchang"
         },
         "oxaToolsGithubProjectName": {
             "value": "oxa-tools"
@@ -84,7 +84,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxConfigurationGithubAccountName": {
-            "value": "iovex"
+            "value": "youzhuchang"
         },
         "edxConfigurationGithubProjectName": {
             "value": "edx-configuration"
@@ -93,7 +93,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxPlatformGithubAccountName": {
-            "value": "iovex"
+            "value": "youzhuchang"
         },
         "edxPlatformGithubProjectName": {
             "value": "edx-platform"
@@ -102,7 +102,7 @@
             "value": "{GITHUBBRANCH}"
         },
         "edxThemeGithubAccountName": {
-            "value": "iovex"
+            "value": "youzhuchang"
         },
         "edxThemeGithubProjectName": {
             "value": "edx-theme"

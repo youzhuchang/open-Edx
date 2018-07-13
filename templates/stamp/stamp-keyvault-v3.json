@@ -179,7 +179,7 @@
         },
         "oxaToolsGithubAccountName": {
             "type": "string",
-            "defaultValue": "iovex",
+            "defaultValue": "youzhuchang",
             "metadata": {
                 "description": "Name of the account that owns the oxa-tools GitHub repository"
             }
@@ -200,7 +200,7 @@
         },
         "edxConfigurationGithubAccountName": {
             "type": "string",
-            "defaultValue": "iovex",
+            "defaultValue": "youzhuchang",
             "metadata": {
                 "description": "Name of the account that owns the edx configuration repository"
             }
@@ -221,7 +221,7 @@
         },
         "edxPlatformGithubAccountName": {
             "type": "string",
-            "defaultValue": "iovex",
+            "defaultValue": "youzhuchang",
             "metadata": {
                 "description": "Name of the account that owns the edx platform repository"
             }
@@ -242,7 +242,7 @@
         },
         "edxThemeGithubAccountName": {
             "type": "string",
-            "defaultValue": "iovex",
+            "defaultValue": "youzhuchang",
             "metadata": {
                 "description": "Name of the account that owns the edx theme repository"
             }
